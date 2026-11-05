@@ -1,0 +1,87 @@
+{
+    "version": 1,
+    "name": "PlayerActions",
+    "maps": [
+        {
+            "name": "move",
+            "id": "fd412225-6b8b-43dc-9a43-cb949afab5a4",
+            "actions": [
+                {
+                    "name": "move",
+                    "type": "Value",
+                    "id": "789f4e80-7726-433d-b466-76467886d47e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": true,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "LeftRight",
+                    "id": "c334c4b8-d1bf-41c3-b9f4-02d117674457",
+                    "path": "2DVector",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "226cb83d-ee1e-4751-9bdc-26344354e857",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "ScaleVector2(x=-1,y=0)",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "a3615c01-af88-402f-a646-3804c196b6f4",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "ScaleVector2(y=0)",
+                    "groups": ";Scheme",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "jump",
+            "id": "dc91dc78-4e24-4ce1-a668-0004dccfe64c",
+            "actions": [
+                {
+                    "name": "jump",
+                    "type": "Button",
+                    "id": "f9508c1f-725a-4f56-9dc0-d88900fa156b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": true,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a029f0c2-d1d0-4863-bd45-c0d03226cec9",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
