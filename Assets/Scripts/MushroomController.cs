@@ -7,6 +7,7 @@ public class MushroomController : EntityController
     }
     mushroomState state;
     
+    [SerializeField] bool canMove = true;
     [SerializeField] string playerTag = "Player";
     [SerializeField]
     private float animationSpeed;
@@ -28,7 +29,7 @@ public class MushroomController : EntityController
         
         if (body != null) {
             if (state.is_in_animation && !animationEnded) AnimateMushroom();
-            else if (state.is_moving)  Move(CycleDirection(delta, 3.0f) * mushshroomSpeed);
+            else if (canMove && state.is_moving)  Move(CycleDirection(delta, 3.0f) * mushshroomSpeed);
         }
     }
 

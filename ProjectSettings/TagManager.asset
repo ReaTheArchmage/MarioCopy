@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - Powerup
   - Weakspot
+  - Coin
+  - Death
   layers:
   - Default
   - TransparentFX
